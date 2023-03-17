@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waltes Game</title>
+  <link rel="stylesheet" href="waltes.css">
+</head>
+<body>
+  <header>
+    <h1>Waltes Game</h1>
+  </header>
+  <main>
+    <section id="game-board">
+      <div id="dish"></div>
+      <button id="roll-dice">Roll Dice</button>
+    </section>
+    <section id="scoreboard">
+      <div class="player-score" id="player1-score">
+        <h3 class="active-player-1">Player 1</h3>
+        <p>Score: <span id="player1-points">0</span></p>
+        <p>Sticks: <span id="player1-sticks">0</span></p>
+      </div>
+      <div class="player-score" id="player2-score">
+        <h3>Player 2</h3>
+        <p>Score: <span id="player2-points">0</span></p>
+        <p>Sticks: <span id="player2-sticks">0</span></p>
+      </div>
+    </section>
+  </main>
+  <script src="waltes.js"></script>
+</body>
+</html>

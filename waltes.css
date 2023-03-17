@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#dish {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #8a5a44;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+
+
+.player-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%; /* Updated width */
+  padding: 10px;
+  background-color: #ebebeb;
+  border: 1px solid #ccc;
+}
+h3 {
+  margin: 0;
+  margin-bottom: 5px;
+} 
+
+.die {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+.current-player {
+  color: red;
+}
+
+@keyframes roll {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.die-rolling {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.current-player h3 {
+  color: red;
+}
+
+
+#scoreboard {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.player-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%; /* Updated width */
+  padding: 10px;
+  background-color: #ebebeb;
+  border: 1px solid #ccc;
+}
+
+/* Add a new CSS class for the active player's table */
+.active-player {
+  background-color: #ffcccc;
+}
+
+/* ... */
+
+/* Update the active player classes */
+.active-player-1 {
+  color: red;
+}
+
+.active-player-2 {
+  color: black;
+}
+
+/* ... */
